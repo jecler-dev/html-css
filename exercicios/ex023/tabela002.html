@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: darkblue;
+
+        }
+        
+        th,td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead,tfoot {
+            background-color: gray;
+            color: rgba(22, 21, 21, 0.952);
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        td.num {
+            background-color: lightgrey;
+            text-align: right;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+        -->
+    <table>
+        <caption>População dos Estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sao Paulo
+                <td class="num"> 45919049
+            <tr>
+                <td>Minas Gerais
+                <td class="num">5465456465
+            <tr>
+                <td>Rio de Janeiro
+                <td class="num">456789456
+            <tr>
+                <td>Bahia
+                <td class="num">345567567
+            <tr>
+                <td>Parana
+                <td class="num">5345345
+            <tr>
+                <td>Parana
+                <td class="num">5345345
+            <tr>
+                <td>Parana
+                <td class="num">5345345
+            <tr>
+                <td>Sao Paulo
+                <td class="num"> 45919049
+            <tr>
+                <td>Minas Gerais
+                <td class="num">5465456465
+            <tr>
+                <td>Rio de Janeiro
+                <td class="num">456789456
+            <tr>
+                <td>Bahia
+                <td class="num">345567567
+            <tr>
+                <td>Parana
+                <td class="num">5345345
+            <tr>
+                <td>Rio Grande do Sul
+                <td class="num">5345345
+            <tr>
+                <td>Pernambuco
+                <td class="num">5345345
+            <tr>
+                <td>Ceara
+                <td class="num"> 45919049
+            <tr>
+                <td>Para
+                <td class="num">5465456465
+            <tr>
+                <td>Santa Catarina
+                <td class="num">456789456
+            <tr>
+                <td>Goias
+                <td class="num">345567567
+            <tr>
+                <td>Maranhão
+                <td class="num">5345345
+            <tr>
+                <td>Paraiba
+                <td class="num">5345345
+            <tr>
+                <td>Amazonas
+                <td class="num">5345345
+            <tr>
+                <td>Espirito Santo
+                <td class="num"> 45919049
+            <tr>
+                <td>Mato Grosso
+                <td class="num">5465456465
+            <tr>
+                <td>Rio Grande do Norte
+                <td class="num">456789456
+            <tr>
+                <td>Piau
+                <td class="num">345567567
+            <tr>
+                <td>Alagoas
+                <td class="num">5345345
+            <tr>
+                <td>Sergipe
+                <td class="num">5345345
+            <tr>
+                <td>Tocantins
+                <td class="num">5345345
+    
+        </tbody>
+            
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">45579567</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+    
+</body>
+</html>
