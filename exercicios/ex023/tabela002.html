@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         caption {
             font-size: 1.5em;
@@ -31,6 +32,11 @@
             color: rgba(22, 21, 21, 0.952);
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: lightgray;
+        }
         tbody > tr:nth-child(even) {
             background-color: lightgray;
         }
@@ -160,6 +166,7 @@
         </tfoot>
         
     </table>
+    
     
 </body>
 </html>
